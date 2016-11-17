@@ -7,7 +7,7 @@ I'm learning form my teacher how to use the GitHub.
 ## Status
 Students
 
-## my skills
+## My skills
 - [x] HTML
 - [x] CSS
 - [x] Sass
