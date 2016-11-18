@@ -7,6 +7,11 @@ I'm learning form my teacher how to use the GitHub.
 ## Status
 Students
 
+## What am I studying
+- Project Management
+- Agile and Scrum
+- Scratch(https://scratch.mit.edu)
+
 ## My skills
 - [x] HTML
 - [x] CSS
