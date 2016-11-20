@@ -11,6 +11,9 @@ Students
 - Project Management
 - Agile and Scrum
 - Scratch(https://scratch.mit.edu)
+  - This is a game I made
+    Title is [Hurry Up Ghost!] You should play!
+  https://scratch.mit.edu/projects/131501126/
 
 ## My skills
 - [x] HTML
