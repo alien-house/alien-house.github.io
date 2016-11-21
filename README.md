@@ -26,8 +26,8 @@ Students
 https://scratch.mit.edu/projects/131501126/
 
 ## Assignment
-- [] Summarize (Agile Software Development & Project Management)
-- [] Making Web Site
+- [ ] Summarize (Agile Software Development & Project Management)
+- [ ] Making Web Site + Logo
 
 ## My skills
 - [x] HTML
