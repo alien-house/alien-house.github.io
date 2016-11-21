@@ -25,6 +25,10 @@ Students
     Title is [Hurry Up Ghost!] You should play!
 https://scratch.mit.edu/projects/131501126/
 
+## Assignment
+- [] Summarize (Agile Software Development & Project Management)
+- [] Making Web Site
+
 ## My skills
 - [x] HTML
 - [x] CSS
