@@ -1,6 +1,6 @@
 # Sin's Portfolio
 
-I'm learning form my teacher how to use the GitHub.
+I'm learning form my teacher how to develop app!
 
 ## Taking class
 - [x] Wireless and Mobile technology – 101
