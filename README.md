@@ -25,12 +25,14 @@ Students / Free Lance as Web Designer & Developer
     Title is [Hurry Up Ghost!] You should play!
 https://scratch.mit.edu/projects/131501126/
 
-## What do I need to do?
-- [ ] Modifying Resume
-
 ## Assignment
 - [ ] Summarize (Agile Software Development & Project Management)
 - [ ] Making Web Site + Logo
+
+## What do I need to do?
+- [ ] Improving my English Skill
+- [ ] Making Self Projects in English
+- [ ] Modifying Resume
 
 ## My skills
 - [x] HTML
