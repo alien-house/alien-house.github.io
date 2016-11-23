@@ -2,6 +2,9 @@
 
 I'm learning form my teacher how to develop app!
 
+## Status
+Students / Free Lance as Web Designer & Developer
+
 ## Taking class
 - [x] Wireless and Mobile technology – 101
 - [ ] Web Development for Mobile Devices – 102
@@ -14,10 +17,8 @@ I'm learning form my teacher how to develop app!
 - [ ] C, Objective C an Swift - 401
 - [ ] iOS App Development and Project for iOS – 402
 
-## Status
-Students / Free Lance as Web Designer & Developer
-
 ## What am I studying
+- Business Markting using Social Media(7 Step Plan)  
 - Project Management
 - Agile and Scrum
 - Scratch(https://scratch.mit.edu)
