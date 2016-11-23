@@ -3,9 +3,10 @@
 I'm learning form my teacher how to develop app!
 
 ## Status
-Students / Free Lance as Web Designer & Developer
+Students / Freelance as Web Designer & Developer
 
-## Taking class
+## What am I studying
+### Taking Class
 - [x] Wireless and Mobile technology – 101
 - [ ] Web Development for Mobile Devices – 102
 - [ ] Rich Media Development – 103
@@ -17,7 +18,7 @@ Students / Free Lance as Web Designer & Developer
 - [ ] C, Objective C an Swift - 401
 - [ ] iOS App Development and Project for iOS – 402
 
-## What am I studying
+### College Subjects
 - Business Markting using Social Media(7 Step Plan)  
 - Project Management
 - Agile and Scrum
@@ -26,7 +27,7 @@ Students / Free Lance as Web Designer & Developer
     Title is [Hurry Up Ghost!] You should play!
 https://scratch.mit.edu/projects/131501126/
 
-## Assignment
+### Assignment
 - [ ] Summarize (Agile Software Development & Project Management)
 - [ ] Making Web Site + Logo
 
