@@ -20,7 +20,8 @@ Students / Freelance as Web Designer & Developer
 
 ### College Subjects
 - Business Markting using Social Media(7 Step Plan) 
-  - Making Banner(FB/Instagram/twitter/Snapchat)
+  - Define Goal & How to make Plan
+  - How to use tool & tactic. banner(FB/Instagram/twitter/Snapchat)
 - Project Management
 - Agile and Scrum
 - Scratch(https://scratch.mit.edu)
