@@ -19,7 +19,8 @@ Students / Freelance as Web Designer & Developer
 - [ ] iOS App Development and Project for iOS – 402
 
 ### College Subjects
-- Business Markting using Social Media(7 Step Plan)  
+- Business Markting using Social Media(7 Step Plan) 
+  - Making Banner(FB/Instagram/twitter/Snapchat)
 - Project Management
 - Agile and Scrum
 - Scratch(https://scratch.mit.edu)
@@ -28,8 +29,9 @@ Students / Freelance as Web Designer & Developer
 https://scratch.mit.edu/projects/131501126/
 
 ### Assignment
-- [ ] Summarize (Agile Software Development & Project Management)
-- [ ] Making Web Site + Logo
+- [x] Summarize (Agile Software Development & Project Management)
+- [x] Creating Game using Scratch
+- [ ] Making Logo + Web Site
 
 ## What do I need to do?
 - [ ] Improving my English Skill
