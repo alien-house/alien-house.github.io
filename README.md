@@ -36,6 +36,10 @@ https://scratch.mit.edu/projects/131501126/
 
 ## What do I need to do?
 - [ ] Improving my English Skill
+- [ ] Increasing my Front-End Skill
+  - [ ] React
+  - [ ] AngularJS
+  - [ ] Vue.js
 - [ ] Making Self Projects in English
 - [ ] Modifying Resume
 
