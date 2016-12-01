@@ -1,0 +1,16 @@
+{
+  "name": "webpack_sample",
+  "description": "",
+  "version": "1.0.0",
+  "author": "uryyyyyyy",
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webpack": "^1.1.2",
+    "jsx-loader": "^0.12.2",
+    "rimraf": "^2.2.8",
+    "webpack": "^1.13.3"
+  }
+}
