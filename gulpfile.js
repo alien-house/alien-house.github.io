@@ -1,24 +1,34 @@
 var gulp = require('gulp');
-var webpack = require('gulp-webpack');
-var webpackConfig = require('./webpack.config.js');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream');
+var webserver = require('gulp-webserver');
 
-gulp.task('cleanBuild', function (cb) {
-  var rimraf = require('rimraf');
-  rimraf('./build/', cb);
+var config = {
+  entryFile: './src/jsx/app.jsx',
+  destDir: './js/',
+  destFile: 'app.js',
+};
+
+//Browserify
+gulp.task('browserify', function() {
+  browserify(config.entryFile, {debug: true})
+    .transform(babelify)
+    .bundle()
+    .on("error", function (err) {console.log("ERROR: " + err.message);})
+    .pipe(source(config.destFile))
+    .pipe(gulp.dest(config.destDir))
 });
 
-gulp.task('copyIndex', ['cleanBuild'], function () {
-  return gulp.src('./source/index.html')
-  .pipe(gulp.dest('./build/'));
+//Watch Task
+gulp.task('watch', function() {
+  gulp.watch(config.entryFile, ['browserify'])
 });
 
-gulp.task('build', ['copyIndex'], function (cb) {
-  return gulp.src('')
-  .pipe(webpack(webpackConfig))
-  .pipe(gulp.dest(''));
+//WebServer
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(webserver({livereload: true}));
 });
 
-
-gulp.task('watch', function(){
-  gulp.watch('', ['build']);
-});
+gulp.task('default', ['browserify', 'watch', 'webserver']);
