@@ -9,7 +9,7 @@ Students / Freelance as Web Designer & Developer
 ### Taking Class
 - [x] Wireless and Mobile technology – 101
 - [ ] Web Development for Mobile Devices – 102
-- [ ] Rich Media Development – 103
+- [x] Rich Media Development – 103
 - [x] Project Management – 104
 - [x] Media Development – 105
 - [ ] C# and Cross Platform Mobil Development - 201
