@@ -46,7 +46,7 @@ https://scratch.mit.edu/projects/131501126/
 ## My skills
 - [x] HTML
 - [x] CSS
-- [x] Sass
+- [x] Scss
 - [x] JavaScript
 - [x] PHP
 - [x] ActionScript
