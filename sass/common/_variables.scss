@@ -1,0 +1,54 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+
+/* ======================================
+   COLOR
+   ====================================== */
+
+$brand-brown:         #a38052;
+$brand-black:         #201f1e;
+$brand-bg:            #f9f9f9;
+
+
+
+/* ======================================
+   RESPONSIVE
+   ====================================== */
+
+$width_pc: 1040px; //PC
+$width_tab: 600px; //タブレット
+$width_sp: 320px; //スマートフォン
+$width_contents: 800px; //スマートフォン
+ 
+@mixin tab {
+  @media (min-width: $width_sp) and (max-width: ($width_pc)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($width_tab)) {
+    @content;
+  }
+}
+
+
+/* ======================================
+   FONT
+   ====================================== */
+$font-regular-set:'Open Sans', sans-serif, Arial, "Yu Gothic",YuGothic,sans-serif,"Hiragino Kaku Gothic Pro",Meiryo,Osaka,"MS PGothic";
+
+$font-montserrat:"Montserrat",'Open Sans', sans-serif, Arial, "Yu Gothic",YuGothic,sans-serif,"Hiragino Kaku Gothic Pro",Meiryo,Osaka,"MS PGothic";
+
+
+
+
+
+
+
+
+
+
+

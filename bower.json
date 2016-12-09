@@ -1,0 +1,23 @@
+{
+  "name": "my portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "alien-house <info@alien-house.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alien-house/alien-house.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "global": "http://dev.nim579.ru/glassy-worms/static/global.js",
+    "sketch": "http://soulwire.github.io/sketch.js/js/sketch.js",
+    "typed.js": "^1.1.4"
+  }
+}

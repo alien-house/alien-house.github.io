@@ -1,0 +1,1 @@
+$(function(){$("body").glassyWorms({colors:["#fff"],useStyles:!0,tailLength:9,gravity:3,friction:.3}),$("#typed").typed({strings:["TO BUILD WEB SITE.","TO CREATE WEB SITE.","TO MAKE LOGO.","PURSUING my IDEAL."],typeSpeed:0,loop:1})});
