@@ -3,11 +3,11 @@ $(function(){
 		$('body').glassyWorms({
 			colors: ['#fff'],
 			useStyles  :true,
-			//numParticles  :250,
-			tailLength :9, //12
-			// maxForce   :3, // Moving force 8
-			gravity    :3, // 9.81
-			friction   :0.3 //0.75
+			numParticles  :90, //250
+			tailLength :6, //12
+			maxForce   :5, // Moving force 8
+			gravity    :6, // 9.81
+			friction   :0.7 //0.75
 			// interval   :10
 		});
 

@@ -22,7 +22,7 @@ $width_pc: 1040px; //PC
 $width_tab: 600px; //タブレット
 $width_sp: 320px; //スマートフォン
 $width_contents: 800px; //スマートフォン
- 
+
 @mixin tab {
   @media (min-width: $width_sp) and (max-width: ($width_pc)) {
     @content;
@@ -41,14 +41,3 @@ $width_contents: 800px; //スマートフォン
 $font-regular-set:'Open Sans', sans-serif, Arial, "Yu Gothic",YuGothic,sans-serif,"Hiragino Kaku Gothic Pro",Meiryo,Osaka,"MS PGothic";
 
 $font-montserrat:"Montserrat",'Open Sans', sans-serif, Arial, "Yu Gothic",YuGothic,sans-serif,"Hiragino Kaku Gothic Pro",Meiryo,Osaka,"MS PGothic";
-
-
-
-
-
-
-
-
-
-
-

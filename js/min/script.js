@@ -1,1 +1,1 @@
-$(function(){$("body").glassyWorms({colors:["#fff"],useStyles:!0,tailLength:9,gravity:3,friction:.3}),$("#typed").typed({strings:["TO BUILD WEB SITE.","TO CREATE WEB SITE.","TO MAKE LOGO.","PURSUING my IDEAL."],typeSpeed:0,loop:1})});
+$(function(){$("body").glassyWorms({colors:["#fff"],useStyles:!0,numParticles:90,tailLength:6,maxForce:5,gravity:6,friction:.7}),$("#typed").typed({strings:["TO BUILD WEB SITE.","TO CREATE WEB SITE.","TO MAKE LOGO.","PURSUING my IDEAL."],typeSpeed:0,loop:1})});

@@ -15,9 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "4.0.0-alpha.5",
     "global": "http://dev.nim579.ru/glassy-worms/static/global.js",
     "sketch": "http://soulwire.github.io/sketch.js/js/sketch.js",
-    "typed.js": "^1.1.4"
+    "typed.js": "^1.1.4",
+    "font-awesome": "^4.7.0"
   }
 }

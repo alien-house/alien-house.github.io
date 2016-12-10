@@ -1,4 +1,5 @@
-
+$fa-font-path:  "../bower_components/font-awesome/fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700');
 
 html{font-size: 10px;}
@@ -14,10 +15,10 @@ body {
 	-webkit-text-size-adjust: none;	/* webkit */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color:#3c3935;
+	color:#fff;
 	font-size: 12px;
-	font-family: $font-regular-set;
-	background:#03091e ;
+	font-family: $font-montserrat;
+	background:#03091e;
 }
 figure,p{
 	margin:0;
@@ -67,7 +68,7 @@ h1,h2,h3,h4{
 	font-family: $font-montserrat;
 }
 
-// 
+//
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
