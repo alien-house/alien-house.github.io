@@ -42,6 +42,7 @@ https://scratch.mit.edu/projects/131501126/
   - [ ] Vue.js
 - [ ] Making Self Projects in English
 - [ ] Modifying Resume
+- [ ] Modifying LinkedIn
 
 ## My skills
 - [x] HTML
