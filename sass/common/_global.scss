@@ -26,8 +26,10 @@ figure,p{
 }
 p{
 	font-size:1.6rem;
-	font-size:16px;
 	line-height: 1.8;
+  @include max-screen($width_tab) {
+   font-size:1.2rem;
+  }
 }
 ul,li{
 	list-style-type:none;

@@ -1,14 +1,43 @@
 
+.section{
+	display:table;
+	position:relative;
+	box-sizing:border-box;
+	width:100%;
+	text-align:center;
+	margin:0 0 12em;
+	padding:2em 0 0;
+	h1{
+		margin:0 0 2em;
+		text-transform:uppercase;
+		.fa{
+			padding-right: 5px;
+		}
+	  @include max-screen($width_tab) {
+			margin:0 0 1.4em;
+    	font-size:2.0rem;
+	  }
+	}
+}
+
+
 a{
-	text-decoration: none !important;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+	&:active{
+		text-decoration: none !important;
+	}
 }
 .worms{
 	// background:#03091e;
+	max-width: 100%;
 }
 .top{
 	background: url(../images/top_bg.png);
 }
-.logo_box{
+.logo-box{
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -26,7 +55,7 @@ a{
 	font-family: $font-montserrat;
 }
 
-.wrap{
+.intro-box{
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -35,6 +64,20 @@ a{
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+	@include max-screen($width_tab) {
+		padding: 0 0 100px;
+	}
+}
+.love_line{
+	width: 84px;
+	display:block;
+	margin: 0 auto;
+	@include max-screen($width_tab) {
+		width: 64px;
+	}
+	path{
+		fill:#FFFFFF;
+	}
 }
 .mysentence{
 	font-size:3.0rem;
@@ -42,12 +85,19 @@ a{
 	font-family: $font-montserrat;
 	.ms-ilove{
 		display: block;
-		font-size:3.0rem;
+		font-size:2.6rem;
+	  @include max-screen($width_tab) {
+			font-size:1.8rem;
+	  }
 	}
 	.ms-typed,.typed-cursor{
 		font-size:4.0rem;
+	  @include max-screen($width_tab) {
+			font-size:2.4rem;
+	  }
 	}
 }
+
 .top-nav{
 	position: absolute;
 	width: 100%;
@@ -61,6 +111,10 @@ a{
 		left:2%;
 		width: 220px;
 		margin-top: -20px;
+	  @include max-screen($width_tab) {
+			width: 120px;
+			top:60%;
+	  }
 		&.btn-works{
 			right:2%;
 			left: auto;
@@ -104,10 +158,141 @@ a{
 }
 
 
-.contents{
-	position: absolute;
-	width: 100%;
-	color: #fff;
+.table-resume{
+	text-align:left;
+	border-bottom:#42444c solid 2px;
+	border-right:#42444c solid 2px;
+	.table-flex-item{
+		display:flex;
+	  align-items:center;
+	  @include max-screen($width_tab) {
+	  	flex-direction:column;
+	  }
+	}
+	.resume-title{
+		text-align:left;
+		font-size:1.4rem;
+		color:#bcbcbc;
+		font-weight:200;
+		font-family:$font-regular-set;
+		text-transform:uppercase;
+		width:65px;
+		vertical-align: middle;
+	  @include max-screen($width_tab) {
+			font-size:1.1rem;
+	  }
+		&[data-width="100"]{
+			width:100px;
+			min-width:100px;
+		}
+		&[data-width="150"]{
+			width:150px;
+			min-width:150px;
+		}
+		&[data-width="160"]{
+			width:160px;
+			min-width:160px;
+		}
+		&[data-width="180"]{
+			width:180px;
+			min-width:180px;
+		}
+	}
+	.table-block{
+		display:flex;
+	  align-items:center;
+		vertical-align: middle;
+		.table-td{
+			padding:20px 30px;
+			width:100%;
+			display:flex;
+		  align-items:center;
+			border-top:#42444c solid 2px;
+			border-left:#42444c solid 2px;
+		  @include max-screen($width_tab) {
+				padding:10px 20px;
+				display:block;
+		  }
+		}
+		.table-left{
+			width:50%;
+		}
+		.table-right{
+			width:50%;
+		}
+		.table-cell{
+			.we-box{
+				margin:0 0 20px;
+				overflow:hidden;
+			  @include max-screen($width_tab) {
+					margin: 7px 0 20px;
+			  }
+				&.we-box--na{
+					margin-bottom: 0.5em;
+				}
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
+			p,h4{
+				font-size:2.0rem;
+			  @include max-screen($width_tab) {
+					font-size:1.4rem;
+			  }
+			}
+			h4{
+				margin:0 0 2px;
+				line-height:1;
+			}
+			.we-title{
+				font-size:1.2rem;
+				font-family:$font-regular-set;
+				color:#bcbcbc;
+				margin:0 0 8px;
+			  @include max-screen($width_tab) {
+					margin-bottom: 4px;
+			  }
+			}
+			.we-p{
+				font-size:1.4rem;
+				line-height:1.4;
+				font-family:$font-regular-set;
+				letter-spacing:0.03em;
+			  @include max-screen($width_tab) {
+					font-size:1.2rem;
+			  }
+			}
+			.list{
+				margin: 0 0 0 1.1em;
+				li{
+					list-style-type: disc;
+					font-size:1.3rem;
+					font-weight:300;
+					font-family:$font-regular-set;
+					margin:0 0 5px;
+				}
+				&.list-flow{
+					margin-top: 0.5em;
+					li{
+						float:left;
+						margin: 0 30px 0 0;
+					}
+				}
+			}
+		}
+		.skill-box{
+			width:32%;
+			margin: 0 1% 0 0;
+			@include max-screen($width_tab) {
+				width: 100%;
+				margin: 7px 0;
+			}
+			h4{
+				font-size:1.5rem;
+				margin: 0 0 10px 0;
+			}
+		}
+	}
 }
 
 .hover{
@@ -118,14 +303,32 @@ a{
 }
 
 
+.line-through{
+	text-decoration: line-through;
+}
+
+.pro-link{
+	border: #454649 solid 1px;
+	display: inline-block;
+}
+.pro-link img{
+	border: #03091e solid 1px;
+
+}
+.show-grid {
+    margin-bottom: 30px;
+}
+
+
+
 .foot-nav{
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	padding: 0 0 1%;
 	z-index: 1;
 	text-align: center;
-	background: rgba(#03091e,0.5);
+	// background: rgba(#03091e,0.5);
 	ul{
 		display: flex;
 	  justify-content:center;
@@ -160,6 +363,49 @@ a{
 		color: #8a8a8a;
 	}
 }
+
+
+// pop
+.pop {
+	i{
+		position: relative;
+		// &:before{
+		// 	position: absolute;
+		// 	top: -20px;
+		// 	left: 8px;
+		// 	display: block;
+		// 	position: absolute;
+		// 	content: "";
+		// 	width: 0;
+		// 	height: 0;
+		// 	border: solid 4px transparent;
+		// 	border-top: solid 4px #fff;
+		// }
+	}
+	&:hover{
+		i{
+			&:after{
+				content:"INVITE ME";
+				font-family:$font-montserrat;
+				position: absolute;
+				display: block;
+				background: rgba(#fff,0.7);
+				width: 66px;
+				height: 16px;
+				color: #222;
+				border-radius: 3px;
+				font-size:1.0rem;
+				line-height: 1.5;
+				top: -24px;
+				left:-20px;
+			}
+		}
+	}
+}
+
+
+
+
 
 /* Bob */
 $bob-num: 6px;

@@ -17,33 +17,22 @@
   	height: 200px;
   }
 }
-.contents{
-  position: relative;
-  text-align: center;
-  z-index: 1;
-  margin: 0 0 6em;
-  h1{
-     text-transform: uppercase;
-     font-size:2.4rem;
-     margin-bottom: 0.2em;
-     i{
-       display: inline-block;
-       font-size:3.0rem;
-       vertical-align: middle;
-       margin-right: 5px;
-     }
-  }
+
+.about{
   p{
     margin: 0 0 1em;
   }
   .head-title{
-     text-transform: uppercase;
-     font-size:3.8rem;
-     margin-bottom: 0.2em;
+    text-transform: uppercase;
+    font-size:3.8rem;
+    margin-bottom: 0.2em;
+    @include max-screen($width_tab) {
+    	font-size:2.6rem;
+    }
   }
   .head-des{
     font-size:1.2rem;
-    line-height: 1.2;
+    line-height: 1.5;
     margin-bottom: 1.6em;
   }
 }
@@ -51,9 +40,13 @@
 .about-nav{
   display: flex;
   justify-content:center;
+  margin: 0 0 1em;
   li{
      text-transform: uppercase;
      margin: 0 1.2em;
+     @include max-screen($width_tab) {
+     	font-size:1.1rem;
+     }
     a{
       color: #fff;
     }
@@ -62,9 +55,29 @@
       font-size:3.4rem;
       margin: 0 0 4px;
     }
-
   }
 }
+
+.email_txt{
+  a{
+    color: #fff;
+    font-size:2.4rem;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 //
 // .logo_path {

@@ -7,7 +7,6 @@ $sidebar-sm-columns:    4;
 /* ======================================
    COLOR
    ====================================== */
-
 $brand-brown:         #a38052;
 $brand-black:         #201f1e;
 $brand-bg:            #f9f9f9;
@@ -19,20 +18,52 @@ $brand-bg:            #f9f9f9;
    ====================================== */
 
 $width_pc: 1040px; //PC
-$width_tab: 600px; //タブレット
-$width_sp: 320px; //スマートフォン
-$width_contents: 800px; //スマートフォン
+$width_tab: 768px; //タブレット
+$width_sp: 640px; //スマートフォン
+$width_md: 970px; //
 
-@mixin tab {
-  @media (min-width: $width_sp) and (max-width: ($width_pc)) {
+// @mixin tab {
+//   @media (min-width: $width_sp) and (max-width: ($width_pc)) {
+//     @content;
+//   }
+// }
+// @mixin sp {
+//   @media (max-width: ($width_tab)) {
+//     @content;
+//   }
+// }
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
     @content;
   }
 }
-@mixin sp {
-  @media (max-width: ($width_tab)) {
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
     @content;
   }
 }
+
+
+/* ======================================
+   Layout
+   ====================================== */
+.flex{
+	display:flex !important;
+	width: 100%;
+  @include max-screen($width_tab) {
+  	flex-direction:column;
+  }
+}
+.flex-align-top{
+	align-items:flex-start !important;
+}
+.contents{
+	position: absolute;
+	width: 100%;
+	color: #fff;
+}
+
 
 
 /* ======================================
