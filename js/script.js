@@ -1,3 +1,5 @@
+var windowHeight;
+var navpos;
 
 $(function(){
 	$('body').glassyWorms({
@@ -14,20 +16,24 @@ $(function(){
 
 
 $(function(){
-	var windowHeight = $(window).height();
+	windowHeight = $(window).height();
+	navpos = $(window).height()/2;
 	$(".intro-box").outerHeight(windowHeight);
 	$(window).on('resize orientationchange', function(e) {
-		$(".intro-box").outerHeight($(window).height());
+		windowHeight = $(window).height();
+		navpos = $(window).height()/2;
+		$(".intro-box").outerHeight(windowHeight);
 	});
 });
 
 $(function(){
 //https://github.com/mattboldt/typed.js/
 	$("#typed").typed({
-		strings: ["TO BUILD WEB SITE.",
+		strings: [
+			"TO BUILD WEB SITE.",
 			"TO CREATE WEB SITE.",
-			"TO DESIGN A LOGO.",
-			"something do related web."],
+			"TO DESIGN A LOGO."
+		],
 		typeSpeed  : 0,
 		loop       :1
 	});
@@ -44,4 +50,33 @@ $(function(){
 		}, 1000,'easeInOutCubic');
 		return false;
 	});
+});
+
+
+
+$(function() {
+	var topBtn = $('.top-nav');
+	var footerNav = $('.foot-nav');
+	// topBtn.hide();
+	$(window).scroll(function () {
+
+		if ($(this).scrollTop() > navpos) {
+			// topBtn.css({"postion":"fixed"});
+			topBtn.addClass("fixed");
+		} else {
+			topBtn.removeClass("fixed");
+			// topBtn.fadeOut();
+		}
+
+		scrollHeight = $(document).height();
+		scrollPosition = $(window).height() + $(this).scrollTop();
+		if ( (scrollHeight - scrollPosition) / scrollHeight <= 0.05) {
+			footerNav.addClass("end");
+		} else {
+			footerNav.removeClass("end");
+		}
+
+
+	});
+
 });
