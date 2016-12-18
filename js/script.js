@@ -17,26 +17,42 @@ $(function(){
 
 $(function(){
 	windowHeight = $(window).height();
-	navpos = $(window).height()/2;
-	$(".intro-box").outerHeight(windowHeight);
-	$(window).on('resize orientationchange', function(e) {
-		windowHeight = $(window).height();
+	if($("body.top").size()){
 		navpos = $(window).height()/2;
+	}else{
+		navpos = $(".intro-box").outerHeight();
+	}
+	if($("body.top").size()){
 		$(".intro-box").outerHeight(windowHeight);
+	}
+	$(window).on('resize orientationchange', function(e) {
+
+		windowHeight = $(window).height();
+		if($("body.top").size()){
+			navpos = $(window).height()/2;
+		}else{
+			navpos = $(".intro-box").outerHeight();
+		}
+		if($("body.top").size()){
+			$(".intro-box").outerHeight(windowHeight);
+		}
 	});
 });
 
+
 $(function(){
-//https://github.com/mattboldt/typed.js/
-	$("#typed").typed({
-		strings: [
-			"TO BUILD WEB SITE.",
-			"TO CREATE WEB SITE.",
-			"TO DESIGN A LOGO."
-		],
-		typeSpeed  : 0,
-		loop       :1
-	});
+	//https://github.com/mattboldt/typed.js/
+	if($("#typed").size()){
+		$("#typed").typed({
+			strings: [
+				"TO BUILD WEB SITE.",
+				"TO CREATE WEB SITE.",
+				"TO DESIGN A LOGO."
+			],
+			typeSpeed  : 0,
+			loop       :1
+		});
+	}
 });
 
 
@@ -53,21 +69,18 @@ $(function(){
 });
 
 
-
 $(function() {
 	var topBtn = $('.top-nav');
 	var footerNav = $('.foot-nav');
 	// topBtn.hide();
 	$(window).scroll(function () {
-
+		//
 		if ($(this).scrollTop() > navpos) {
-			// topBtn.css({"postion":"fixed"});
 			topBtn.addClass("fixed");
 		} else {
 			topBtn.removeClass("fixed");
-			// topBtn.fadeOut();
 		}
-
+		//footer
 		scrollHeight = $(document).height();
 		scrollPosition = $(window).height() + $(this).scrollTop();
 		if ( (scrollHeight - scrollPosition) / scrollHeight <= 0.05) {

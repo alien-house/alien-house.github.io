@@ -32,14 +32,14 @@ a{
 	  }
 	}
 }
+.section--base{
+	@extend .section;
+	padding-top: 10em;
+}
 
 
 .worms{
-	// background:#03091e;
 	max-width: 100%;
-}
-.top{
-	background: url(../images/top_bg.png);
 }
 
 .table-resume{
@@ -195,14 +195,6 @@ a{
 	text-decoration: line-through;
 }
 
-.pro-link{
-	border: #454649 solid 1px;
-	display: inline-block;
-}
-.pro-link img{
-	border: #03091e solid 1px;
-
-}
 .show-grid {
     // margin-bottom: 30px;
 }
