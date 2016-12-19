@@ -1,0 +1,13 @@
+{
+  "name": "sketch",
+  "_cacheHeaders": {
+    "Last-Modified": "Fri, 25 Nov 2016 13:41:07 GMT",
+    "Content-Length": "4057",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://soulwire.github.io/sketch.js/js/sketch.js",
+  "_target": "*",
+  "_originalSource": "http://soulwire.github.io/sketch.js/js/sketch.js",
+  "_direct": true
+}
