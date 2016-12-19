@@ -2,16 +2,18 @@ var windowHeight;
 var navpos;
 
 $(function(){
-	$('body').glassyWorms({
-		colors: ['#fff'],
-		useStyles  :true,
-		numParticles  :100, //250
-		tailLength :8, //12
-		maxForce   :5, // Moving force 8
-		gravity    :6, // 9.81
-		friction   :0.7 //0.75
-		// interval   :10
-	});
+	if($("body.top").size()){
+		$('body').glassyWorms({
+			colors: ['#fff'],
+			useStyles  :true,
+			numParticles  :100, //250
+			tailLength :8, //12
+			maxForce   :5, // Moving force 8
+			gravity    :6, // 9.81
+			friction   :0.7 //0.75
+			// interval   :10
+		});
+	}
 });
 
 

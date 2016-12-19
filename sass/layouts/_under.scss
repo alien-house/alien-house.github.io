@@ -45,6 +45,8 @@
       }
       strong{
         font-size:1.5rem;
+        font-family: $font-montserrat;
+        text-transform: uppercase;
         @include max-screen($width_tab) {
           font-size:1.4rem;
           line-height: 1.3;
@@ -77,8 +79,19 @@
 
 .works-pjk{
   margin: 0 0 30px;
-  @include max-screen($width_tab) {
+  @include max-screen($width_sm) {
     margin: 0 0 20px;
+    height: 80px;
+    overflow: hidden;
+  	border: #454649 solid 1px;
+    a{
+  		border:none !important;
+      img{
+        position: relative;
+        top: -35px;
+        border: none !important;
+      }
+    }
   }
 
   a{
@@ -117,20 +130,31 @@
         height: 100%;
         vertical-align: middle;
         padding: 0 15px;
+        i{
+          font-size: 2rem;
+          padding-bottom: 10px;
+          @include max-screen($width_md) {
+          padding-bottom: 5px;
+          }
+        }
       }
     }
     .pro-title{
       font-size:1.6rem;
       margin:0 0 6px;
+      @include max-screen($width_md) {
+        font-size:1.4rem;
+      }
     }
     .pro-caption{
       font-size:1.4rem;
       line-height: 1.2;
       font-family: $font-regular-set;
+      @include max-screen($width_md) {
+        display: none;
+      }
     }
   }
-
-
 }
 
 
@@ -156,10 +180,50 @@
 .base{
 }
 .project{
+  font-family: $font-regular-set;
   h2{
     font-size:2.0rem;
+    position: relative;
+    line-height: 0.9;
+    margin: 0 0 2em;
+    &:before,&:after{
+      position: absolute;
+      display: inline-block;
+      content: "";
+      border-radius: 50px;
+      height: 4px;
+      width: 36%;
+      background: #64666d;
+      top:40%;
+      @include max-screen($width_tab) {
+      width: 22%;
+      }
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
     span{
       font-size:1.4rem;
+    }
+  }
+  .project__images{
+    margin: 0 0 2em;
+  }
+  .project__caption{
+    text-align: left;
+    margin-bottom:2em;
+    p,ul{
+      font-size:1.4rem;
+      margin-bottom:1em;
+    }
+  }
+  .project__subtitle{
+    margin: 0 0 2em;
+    h3{
+      padding: 2em 0 0;
     }
   }
 }

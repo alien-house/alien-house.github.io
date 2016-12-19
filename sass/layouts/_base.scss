@@ -9,6 +9,10 @@ a{
 	}
 }
 
+/* ======================================
+
+   ====================================== */
+
 .section{
 	display:table;
 	position:relative;
@@ -20,7 +24,7 @@ a{
 	@include max-screen($width_tab) {
 		margin:0 0 5em;
 	}
-	h1{
+	h1,.related-title{
 		margin:0 0 2em;
 		text-transform:uppercase;
 		.fa{
@@ -30,6 +34,9 @@ a{
 			margin:0 0 1.4em;
     	font-size:2.0rem;
 	  }
+	}
+	.related-title{
+		padding-top: 30px;
 	}
 }
 .section--base{
@@ -150,23 +157,6 @@ a{
 					font-size:1.2rem;
 			  }
 			}
-			.list{
-				margin: 0 0 0 1.1em;
-				li{
-					list-style-type: disc;
-					font-size:1.3rem;
-					font-weight:300;
-					font-family:$font-regular-set;
-					margin:0 0 5px;
-				}
-				&.list-flow{
-					margin-top: 0.5em;
-					li{
-						float:left;
-						margin: 0 30px 0 0;
-					}
-				}
-			}
 		}
 		.skill-box{
 			width:32%;
@@ -179,6 +169,30 @@ a{
 				font-size:1.5rem;
 				margin: 0 0 10px 0;
 			}
+		}
+	}
+}
+.list{
+	margin: 0 0 0 1.1em;
+	a{
+		text-decoration: underline;
+		color: #fff;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	li{
+		list-style-type: disc;
+		font-size:1.3rem;
+		font-weight:300;
+		font-family:$font-regular-set;
+		margin:0 0 5px;
+	}
+	&.list-flow{
+		margin-top: 0.5em;
+		li{
+			float:left;
+			margin: 0 30px 0 0;
 		}
 	}
 }
@@ -246,417 +260,3 @@ $bob-num: 6px;
     transform: translateY(-$bob-num);
   }
 }
-
-//
-// .logo_path {
-// 	fill: #a38052;
-// 	fill-rule: evenodd;
-// }
-// .top{
-// 	.logo{
-// 		font-family: $font-montserrat;
-// 		font-size:3.0rem;
-// 		font-size:30px;
-// 		text-align: center;
-// 		margin:0 0 20px;
-// 	}
-// 	.sec-intro{
-// 		width:100%;
-// 		text-align: center;
-// 		display: table;
-// 		vertical-align: middle;
-// 		.intro-box{
-// 			display: table-cell;
-// 			text-align: center;
-// 			vertical-align: middle;
-// 			@include sp {
-// 				padding:0 10px;
-// 			};
-// 			.site_cap{
-// 				font-family: $font-montserrat;
-// 				font-size:5.4rem;
-// 				font-size:54px;
-// 				line-height:1;
-// 				font-weight: bold;
-// 				margin:0 0 30px;
-// 				letter-spacing:0.05em;
-// 				@include tab {
-// 					font-size:3.4rem;
-// 					font-size:34px;
-// 				};
-// 				@include sp {
-// 					font-size:2.4rem;
-// 					font-size:24px;
-// 				};
-// 			}
-// 			.site_desc{
-// 				font-size:2.0rem;
-// 				font-size:20px;
-// 				line-height:1.5;
-// 				color:#5a5a5a;
-// 				@include tab {
-// 					font-size:1.6rem;
-// 					font-size:16px;
-// 				};
-// 				@include sp {
-// 					font-size:1.4rem;
-// 					font-size:14px;
-// 				};
-// 			}
-//
-// 		}
-// 	}
-// 	.gnav-top{
-// 		margin:40px 0 0;
-// 		ul{
-// 			display:flex;
-// 			justify-content: center;
-// 			width:100%;
-// 			li{
-// 				margin:0 20px;
-// 				font-size:18px;
-// 			}
-// 		}
-// 	}
-//
-//
-//
-// 	.sec-clients {
-// 		background:#fff;
-// 		ul{
-// 			width:800px;
-// 			display:table;
-// 			margin:0 auto;
-// 			text-align: center;
-// 			li{
-// 				display:table-cell;
-// 				width:140px;
-// 				text-align: center;
-// 			}
-// 		}
-// 	}
-//
-// 	.sec-contact{
-// 		background:#f0e9e1;
-// 		padding:100px 0;
-// 		.second-title{
-// 			margin-bottom:10px;
-// 		}
-// 		.second-description{
-// 			text-align:center;
-// 			font-size:1.6rem;
-// 			font-size:16px;
-// 			margin:0 0 ;
-// 			font-weight:bold;
-// 		}
-// 		.contact-form{
-// 			padding:50px 0 0;
-// 		}
-// 		.sec-contact-row{
-// 			width:700px;
-// 			margin:0 auto;
-// 		}
-// 		.form-box{
-// 			// display:flex;
-// 			// flex-wrap:wrap;
-// 			// justify-content:space-between;
-// 			// align-items:stretch;
-// 			overflow:hidden;
-// 		}
-// 		.form-group{
-// 			width:50%;
-// 			height:76px;
-// 			float:left;
-// 			margin:0 0 10px;
-// 			&:nth-child(2n){
-// 				.form-group-inner{
-// 					margin-left: auto;
-// 				}
-// 			}
-// 			&.form-group_text{
-// 				width:100%;
-// 				height:190px;
-// 				float:none;
-// 				.form-group-inner{
-// 					width:100%;
-// 				}
-// 			}
-// 			.form-group-inner{
-// 				background:#d9cfc5;
-// 				width:98%;
-// 				height:100%;
-// 			}
-// 			input[type="text"],input[type="email"],input[type="tel"],  select, textarea {
-// 			    box-sizing: border-box;
-// 			    color: #303336;
-// 			    font-size: 14px;
-// 			    line-height: 1;
-// 			    padding: 12px;
-// 			    width: 100%;
-// 			}
-// 			textarea{
-// 				height:159px;
-// 				line-height:1.4;
-// 			}
-// 			.form-group-title{
-// 				color:#545454;
-// 				font-size:1.4rem;
-// 				font-size:14px;
-// 				margin:0 0 ;
-// 				font-weight:bold;
-// 				padding:8px 10px 2px;
-//
-// 			}
-// 		}
-// 		.btn-send-wrap{
-// 			padding:15px 0;
-// 			.btn-send{
-// 				margin-left: auto;
-// 			}
-// 		}
-//
-//
-// 	}
-//
-//
-// }
-//
-//
-// .sec-team{
-// 	background:#ddd;
-// 	padding:100px 0;
-//
-// 	.team-list{
-// 		width:780px;
-// 		margin:0 auto;
-// 		text-align:center;
-// 		display:flex;
-// 		@include tab {
-// 			width:100%;
-// 			margin:0;
-// 		};
-// 		@include sp {
-// 			display:block;
-// 		};
-// 	}
-// 	.team-list > li{
-// 		width:33%;
-// 		margin:0 30px;
-// 		@include sp {
-// 			width:auto;
-// 			margin:0 0 5%;
-// 			padding:0 20%;
-// 		};
-// 	}
-// 	.team-list-item-img{
-// 		width:200px;
-// 		height:200px;
-// 		background:#ececec;
-// 		display:table-cell;
-// 		vertical-align: bottom;
-// 		@include sp {
-// 			display:block;
-// 			width:auto;
-// 			height:auto;
-// 			padding-top:20px;
-// 		};
-// 		img{
-// 			min-width:auto;
-// 			height:179px;
-// 			@include tab {
-// 				height:auto;
-// 			};
-// 		}
-// 	}
-// 	.team-list-item-name{
-// 		font-size:16px;
-// 		font-size:1.6rem;
-// 		margin:10px 0 0;
-// 	}
-// 	.team-list-item-role{
-// 		color:#898989;
-// 		font-weight:bold;
-// 		margin: 0;
-// 		font-size:1.2rem;
-// 		font-size:12px;
-// 	}
-//
-//
-// 	.social-buttons{}
-// 	.social-buttons li{
-// 		display:inline-block;
-// 	}
-// }
-//
-// .second-title{
-// 	font-family: $font-montserrat;
-// 	font-size:4.0rem;
-// 	font-size:40px;
-// 	line-height:1;
-// 	font-weight: bold;
-// 	text-align:center;
-// 	margin:0 0 70px;
-// 	letter-spacing:0.1em;
-// 	@include sp {
-// 		font-size:3.0rem;
-// 		font-size:30px;
-// 	};
-// }
-//
-//
-//
-//
-// /* ======================================
-//    FOOTER
-//    ====================================== */
-// .footer{
-// 	background:#201f1e;
-// 	padding:0 0 20px;
-// 	.footer-logo{
-// 		padding:20px 0 14px;
-// 		svg{
-// 			width:65px;
-// 		}
-// 		.logo_path {
-// 			fill: #3d3d3c;
-// 			fill-rule: evenodd;
-// 		}
-// 	}
-// 	.footer-inner{
-// 		text-align:center;
-// 	}
-// 	.social-buttons-list{
-// 		display:flex;
-// 		justify-content:center;
-// 		margin:0 0 20px;
-// 		li{
-// 			margin:0 10px;
-// 			a{
-// 				display: table;
-// 				background:#fff;
-// 				border-radius:50px;
-// 				width:30px;
-// 				height:30px;
-// 				i{
-// 					display:table-cell;
-// 					font-size:1.5rem;
-// 					font-size:15px;
-// 					vertical-align: middle;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	.footer-nav{
-// 		display:flex;
-// 		justify-content:center;
-// 		margin:0 0 40px;
-// 		li{
-// 			font-family: $font-montserrat;
-// 			font-size:1.6rem;
-// 			font-size:16px;
-// 			margin:0 20px;
-// 			a{
-// 				color:#fff;
-// 			}
-// 		}
-// 	}
-// 	.area-list{
-// 		display:flex;
-// 		justify-content:center;
-// 		margin:0 0 20px;
-// 		.area-list-item{
-// 			margin:0 10px;
-// 			width:260px;
-// 			.area-list-img{
-// 				float:left;
-// 				img{
-// 					width:100px;
-// 				}
-// 			}
-// 			.area-list-meta{
-// 				float:left;
-// 				text-align:left;
-// 				color:#fff;
-// 				margin:22px 0 0 15px;
-// 				dt{
-// 					font-family: $font-montserrat;
-// 					font-size:1.6rem;
-// 					font-size:16px;
-// 					margin: 0 0 5px;
-// 				}
-// 				dd{
-// 					color:#a0a0a0;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	small{
-// 		display:block;
-// 		color:#a0a0a0;
-// 		font-size:1.4rem;
-// 		font-size:14px;
-// 		padding:20px 0 0;
-// 	}
-// }
-//
-// .to-contact{
-// 	text-align:center;
-// 	background:#f0e9e1;
-// 	padding:80px 0;
-// 	h2{
-// 		font-size:3.8rem;
-// 		font-size:38px;
-// 	}
-// 	p{
-// 		font-family: $font-montserrat;
-// 	}
-// 	.btn-wrap{
-// 		margin:20px 0 0;
-// 	}
-// 	.btn-to-contact{
-// 		margin:0 auto;
-// 	}
-// }
-//
-//
-//
-//
-//
-// /* ======================================
-//    LOADING
-//    ====================================== */
-// .page-loader {
-//     display: none;
-//     height: 100%;
-//     left: 0;
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//     z-index: 999;
-//     background:#333;
-// }
-//
-//
-//
-//
-//
-//
-//
-// /* ======================================
-//    MODULE
-//    ====================================== */
-//
-// .img-circle{
-// 	border-radius:50%;
-// }
-// .left{
-// 	float:left;
-// 	margin: 8px 25px 15px 0;
-// }
-//
-// .cf {zoom:1;}
-// .cf:after {
-//   content: "";
-//   display: block;
-//   clear: both;
-// }
