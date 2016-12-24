@@ -47,8 +47,8 @@ $(function(){
 	if($("#typed").size()){
 		$("#typed").typed({
 			strings: [
-				"TO BUILD WEB SITE.",
-				"TO CREATE WEB SITE.",
+				"TO BUILD WEBSITES.",
+				"TO CREATE WEBSITES.",
 				"TO DESIGN A LOGO."
 			],
 			typeSpeed  : 0,
