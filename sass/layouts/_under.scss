@@ -61,21 +61,41 @@
   justify-content:center;
   margin: 0 0 1em;
   li{
-     text-transform: uppercase;
-     margin: 0 1.2em;
-     @include max-screen($width_tab) {
-     	font-size:1.1rem;
-     }
+    text-transform: uppercase;
+    margin: 0 1.2em;
+    @include max-screen($width_tab) {
+      font-size:1.1rem;
+    }
     a{
       color: #fff;
+      &:hover{
+        i{
+          animation-name: slide;
+          animation-duration: .3s;
+          animation-timing-function: ease-in-out;
+        }
+      }
     }
     i{
+      position: relative;
       display: block;
       font-size:3.4rem;
       margin: 0 0 4px;
     }
   }
 }
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  60% {
+    top: -6px;
+  }
+  100% {
+    top: -2px;
+  }
+}
+
 
 .works-pjk{
   margin: 0 0 30px;
