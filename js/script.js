@@ -95,3 +95,23 @@ $(function() {
 	});
 
 });
+
+
+var url_self = "https://api.instagram.com/v1/users/self/?access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01";
+
+$(function(){
+
+    $.getJSON(url_self, function(data){
+    	console.log(data);
+    });
+});
+
+
+
+
+
+
+
+
+
+
