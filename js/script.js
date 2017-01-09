@@ -109,6 +109,7 @@ $(function(){
     $.ajax({
         url: url_self,
         method: 'get',
+        dataType: 'jsonp',
         success: function(data) {
     	console.log(data);
         }
