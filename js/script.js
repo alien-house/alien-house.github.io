@@ -97,7 +97,7 @@ $(function() {
 });
 
 
-var url_self = "https://api.instagram.com/v1/users/self/?access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01";
+var url_self = "https://api.instagram.com/v1/users/self/";
 
 $(function(){
 
@@ -105,13 +105,20 @@ $(function(){
     // 	console.log(data);
     // });
 
+    //get a info from insta
+	var arg = new Object;
+	var pair=location.hash.substring(1).split('#');
+	for(var i=0;pair[i];i++) {
+	    var kv = pair[i].split('=');
+	    arg[kv[0]]=kv[1];
+	}
+
 
     $.ajax({
-        url: url_self,
+        url: url_self +"?access_token="+arg['access_token'],
         method: 'get',
         dataType: 'jsonp',
         success: function(data) {
-    	console.log(data.data.full_name);
     	$("#name").append(data.data.full_name);
         }
     });
