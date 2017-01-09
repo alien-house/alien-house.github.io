@@ -107,15 +107,15 @@ $(function(){
 
     //get a info from insta
 	var arg = new Object;
-	var pair=location.hash.substring(1).split('#');
-	for(var i=0;pair[i];i++) {
+	var pair = location.hash.substring(1).split('#');
+	for(var i = 0; pair[i]; i++) {
 	    var kv = pair[i].split('=');
-	    arg[kv[0]]=kv[1];
+	    arg[kv[0]] = kv[1];
 	}
 
 
     $.ajax({
-        url: url_self +"?access_token="+arg['access_token'],
+        url: url_self +"?access_token=" + arg['access_token'],
         method: 'get',
         dataType: 'jsonp',
         success: function(data) {
