@@ -101,9 +101,21 @@ var url_self = "https://api.instagram.com/v1/users/self/?access_token=4401932064
 
 $(function(){
 
-    $.getJSON(url_self, function(data){
+    // $.getJSON(url_self, function(data){
+    // 	console.log(data);
+    // });
+
+
+    $.ajax({
+        url: url_self,
+        method: 'get',
+        success: function(data) {
     	console.log(data);
+        }
     });
+
+
+
 });
 
 
