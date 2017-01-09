@@ -119,7 +119,9 @@ $(function(){
         method: 'get',
         dataType: 'jsonp',
         success: function(data) {
-    	$("#name").append(data.data.full_name);
+        	if(data){
+    			$("#name").append(data.data.full_name);
+        	}
         }
     });
 
