@@ -111,7 +111,8 @@ $(function(){
         method: 'get',
         dataType: 'jsonp',
         success: function(data) {
-    	console.log(data);
+    	console.log(data.full_name);
+    	$("#name").append(data.full_name);
         }
     });
 
