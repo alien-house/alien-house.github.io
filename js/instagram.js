@@ -26,7 +26,7 @@ $(function(){
         	if(data !== undefined){
     			$("#name").append(data.data.full_name);
     			$("#username").append(data.data.username);
-    			$("#username").append(data.data.username);
+    			$("#bio").append(data.data.bio);
     			$(".profile-img").find("img").attr("src",data.data.profile_picture);
     			$("#followed").append(data.data.counts.followed_by);
     			$("#follows").append(data.data.counts.follows);
