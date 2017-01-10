@@ -18,7 +18,7 @@ $(function(){
 	// console.log(exis_accesstoken);
 
     $.ajax({
-        url: url_self +"?access_token=" + exis_accesstoken,
+        url: url_self +"?access_token=" + exis_accesstoken +"&scope=likes+comments+relationships+likes+public_content+basic",
         method: 'get',
         dataType: 'jsonp',
         success: function(data) {
