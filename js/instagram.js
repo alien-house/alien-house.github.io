@@ -91,7 +91,7 @@ function adduserInfo(datajson){
 	container += '<p>'+datajson.full_name+'</p>';
 	container += "<img src='"+datajson.profile_picture+"' width='100' height='100' >";
 	container += '</li>';
-	$(".followed-list").append(container);
+	$("#followed-list").append(container);
 	
 }
 
