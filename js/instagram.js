@@ -85,14 +85,14 @@ $(function(){
 function adduserInfo(datajson){
 	console.log("datajson:"+datajson);
 	var full_name = datajson.username;
-	$(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
-	$("#username","."+full_name).html(datajson.username);
-	$("#name","."+full_name).html(datajson.full_name);
-	$("#bio","."+full_name).html(datajson.bio);
-	$(".profile-img","."+full_name).find("img").attr("src",datajson.profile_picture);
-	$("#followed","."+full_name).html(datajson.counts.followed_by);
-	$("#follows","."+full_name).html(datajson.counts.follows);
-	$("#media","."+full_name).html(datajson.counts.media);
+	// $(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
+	var container = '<li>';
+	container += '<p>'+datajson.username+'</p>';
+	container += '<p>'+datajson.full_name+'</p>';
+	container += "<img src='"+datajson.profile_picture+"' width='100' height='100' >";
+	container += '</li>';
+	$(".followed-list").html(container);
+	
 }
 
 
