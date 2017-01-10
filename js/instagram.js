@@ -69,6 +69,7 @@ $(function(){
 	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
 		        	for (var i = 0; datajson.length > 0; i++) {
 		        		// console.log(datajson[i].id);
+		        		console.log(datajson[i]);
 		        		adduserInfo(datajson[i]);
 		        	}
 
