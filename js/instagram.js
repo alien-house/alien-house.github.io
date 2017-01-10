@@ -37,7 +37,7 @@ $(function(){
         	}
         }
     });
-    
+
     $.ajax({
         url: url_self +"followed-by?access_token=" + exis_accesstoken,
         method: 'get',
@@ -46,8 +46,9 @@ $(function(){
 			console.log(datajson);
         	if(datajson.data.length >= 1){
         		$("<h2>FOLLOWED USERS</h2>").prependTo("#followed-box");
-	        	for (var i = 0; datajson.data.length >= i; i++) {
-	        		// console.log(datajson[i].id);
+	        	for (var i = 0; datajson.data.length > i; i++) {
+	        		// console.log(datajson.data.length);
+	        		console.log(i);
 	        		adduserInfo(datajson.data[i]);
 	        	}
 
