@@ -1,4 +1,5 @@
 var url_self = "https://api.instagram.com/v1/users/self/";
+var url_users = "https://api.instagram.com/v1/users/";
 var exis_accesstoken;
 $(function(){
 
@@ -36,14 +37,23 @@ $(function(){
         	}
         }
     });
-
+    
 	$("#sinofool-btn").on("click", function(){
 	    $.ajax({
-	        url: "https://api.instagram.com/v1/users/1474272023/?access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01",
+        	url: url_users+"1474272023" +"/?access_token=" + exis_accesstoken,
 	        method: 'get',
 	        dataType: 'jsonp',
-	        success: function(data) {
-	        	console.log(data);
+	        success: function(datajson) {
+	        	if(datajson !== undefined){
+		        	$(".profile-box").clone().addClass("sinofool");
+	    			$("#username",".sinofool").append(datajson.data.username);
+	    			$("#name",".sinofool").append(datajson.data.full_name);
+	    			$("#bio",".sinofool").append(datajson.data.bio);
+	    			$(".profile-img",".sinofool").find("img").attr("src",datajson.data.profile_picture);
+	    			$("#followed",".sinofool").append(datajson.data.counts.followed_by);
+	    			$("#follows",".sinofool").append(datajson.data.counts.follows);
+	    			$("#media",".sinofool").append(datajson.data.counts.media);
+	        	}
 	        }
 	    });
 	});
