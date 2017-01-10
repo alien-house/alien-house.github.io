@@ -65,6 +65,7 @@ $(function(){
 	        method: 'get',
 	        dataType: 'jsonp',
 	        success: function(datajson) {
+				console.log(datajson);
 	        	if(datajson.length >= 1){
 	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
 		        	for (var i = 0; datajson.length > 0; i++) {
