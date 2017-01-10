@@ -67,8 +67,8 @@ $(function(){
 	        success: function(datajson) {
 				console.log(datajson);
 	        	if(datajson.data.length >= 1){
-	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
-		        	for (var i = 0; datajson.data.length > 0; i++) {
+	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#followed-box");
+		        	for (var i = 0; datajson.data.length >= i; i++) {
 		        		// console.log(datajson[i].id);
 		        		adduserInfo(datajson.data[i]);
 		        	}
@@ -83,7 +83,7 @@ $(function(){
 });
 
 function adduserInfo(datajson){
-	console.log("datajson:"+datajson);
+	console.log("datajson:"+datajson.username);
 	var full_name = datajson.username;
 	// $(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
 	var container = '<li>';
@@ -91,7 +91,7 @@ function adduserInfo(datajson){
 	container += '<p>'+datajson.full_name+'</p>';
 	container += "<img src='"+datajson.profile_picture+"' width='100' height='100' >";
 	container += '</li>';
-	$(".followed-list").html(container);
+	$(".followed-list").append(container);
 	
 }
 
