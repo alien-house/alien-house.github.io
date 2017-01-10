@@ -25,6 +25,12 @@ $(function(){
         	console.log(data);
         	if(data !== undefined){
     			$("#name").append(data.data.full_name);
+    			$("#username").append(data.data.username);
+    			$("#username").append(data.data.username);
+    			$(".profile-img").find("img").attr("src",data.data.profile_picture);
+    			$("#followed").append(data.data.counts.followed_by);
+    			$("#follows").append(data.data.counts.follows);
+    			$("#media").append(data.data.counts.media);
         	}
         }
     });
@@ -35,9 +41,7 @@ $(function(){
 	        method: 'get',
 	        dataType: 'jsonp',
 	        success: function(data) {
-	        	if(data){
-	    			$("#name").append(data.data.full_name);
-	        	}
+	        	console.log(data);
 	        }
 	    });
 	});
