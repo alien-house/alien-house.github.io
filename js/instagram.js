@@ -58,24 +58,22 @@ $(function(){
 	    });
 	});
 
-	$("#search-btn").on("click", function(){
-	    $.ajax({
-	        url: url_self +"?access_token=" + exis_accesstoken,
-	        method: 'get',
-	        dataType: 'jsonp',
-	        success: function(data) {
-	        	console.log(data);
-	        }
-	    });
-	});
 
 	$("#followed-btn").on("click", function(){
 	    $.ajax({
 	        url: url_self +"followed-by?access_token=" + exis_accesstoken,
 	        method: 'get',
 	        dataType: 'jsonp',
-	        success: function(data) {
-	        	console.log(data);
+	        success: function(datajson) {
+	        	if(datajson.length >= 1){
+	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
+		        	for (var i = 0; datajson.length > 0; i++) {
+		        		// console.log(datajson[i].id);
+		        		adduserInfo(datajson[i]);
+		        	}
+
+	        	}
+
 	        }
 	    });
 	});
@@ -83,7 +81,17 @@ $(function(){
 
 });
 
-
+function adduserInfo(datajson){
+	var full_name = datajson.username;
+	$(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
+	$("#username","."+full_name).html(datajson.username);
+	$("#name","."+full_name).html(datajson.full_name);
+	$("#bio","."+full_name).html(datajson.bio);
+	$(".profile-img","."+full_name).find("img").attr("src",datajson.profile_picture);
+	$("#followed","."+full_name).html(datajson.counts.followed_by);
+	$("#follows","."+full_name).html(datajson.counts.follows);
+	$("#media","."+full_name).html(datajson.counts.media);
+}
 
 
 
