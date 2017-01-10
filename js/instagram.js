@@ -31,9 +31,24 @@ $(function(){
     			$("#followed").append(datajson.data.counts.followed_by);
     			$("#follows").append(datajson.data.counts.follows);
     			$("#media").append(datajson.data.counts.media);
+        	}else{
+        		$(".profile-box").remove();
         	}
         }
     });
+
+	$("#sinofool-btn").on("click", function(){
+	    $.ajax({
+	        url: "https://api.instagram.com/v1/users/1474272023/?access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01",
+	        method: 'get',
+	        dataType: 'jsonp',
+	        success: function(data) {
+	        	console.log(data);
+	        }
+	    });
+	});
+https://api.instagram.com/v1/users/{user-id}/?access_token=ACCESS-TOKEN
+
 
 	$("#search-btn").on("click", function(){
 	    $.ajax({
