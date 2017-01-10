@@ -37,7 +37,7 @@ $(function(){
         	}
         }
     });
-    
+
 	$("#sinofool-btn").on("click", function(){
 	    $.ajax({
         	url: url_users+"1474272023" +"/?access_token=" + exis_accesstoken,
@@ -45,7 +45,7 @@ $(function(){
 	        dataType: 'jsonp',
 	        success: function(datajson) {
 	        	if(datajson !== undefined){
-		        	$(".profile-box").clone().addClass("sinofool");
+		        	$(".profile-box").clone().addClass("sinofool").appendTo( "#test-detail" );
 	    			$("#username",".sinofool").append(datajson.data.username);
 	    			$("#name",".sinofool").append(datajson.data.full_name);
 	    			$("#bio",".sinofool").append(datajson.data.bio);
