@@ -71,7 +71,7 @@ $(function(){
 
 	$("#follow-btn").on("click", function(){
 	    $.ajax({
-	        url: url_self +"follows?access_token=" + exis_accesstoken,
+	        url: url_self +"followed-by?access_token=" + exis_accesstoken,
 	        method: 'get',
 	        dataType: 'jsonp',
 	        success: function(data) {
