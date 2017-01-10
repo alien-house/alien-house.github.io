@@ -68,7 +68,7 @@ $(function(){
 				console.log(datajson);
 	        	if(datajson.data.length >= 1){
 	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
-		        	for (var i = 0; datajson.length > 0; i++) {
+		        	for (var i = 0; datajson.data.length > 0; i++) {
 		        		// console.log(datajson[i].id);
 		        		adduserInfo(datajson.data[i]);
 		        	}
