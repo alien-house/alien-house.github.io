@@ -70,7 +70,6 @@ $(function(){
 	        		$("<h2>FOLLOWED USERS</h2>").appendTo("#test-detail");
 		        	for (var i = 0; datajson.length > 0; i++) {
 		        		// console.log(datajson[i].id);
-		        		console.log(datajson.data[i]);
 		        		adduserInfo(datajson.data[i]);
 		        	}
 
@@ -84,6 +83,7 @@ $(function(){
 });
 
 function adduserInfo(datajson){
+	console.log("datajson:"+datajson);
 	var full_name = datajson.username;
 	$(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
 	$("#username","."+full_name).html(datajson.username);
