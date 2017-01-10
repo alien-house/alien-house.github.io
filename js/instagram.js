@@ -69,7 +69,7 @@ $(function(){
 	    });
 	});
 
-	$("#follow-btn").on("click", function(){
+	$("#followed-btn").on("click", function(){
 	    $.ajax({
 	        url: url_self +"followed-by?access_token=" + exis_accesstoken,
 	        method: 'get',
