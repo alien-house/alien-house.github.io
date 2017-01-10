@@ -37,6 +37,24 @@ $(function(){
         	}
         }
     });
+    
+    $.ajax({
+        url: url_self +"followed-by?access_token=" + exis_accesstoken,
+        method: 'get',
+        dataType: 'jsonp',
+        success: function(datajson) {
+			console.log(datajson);
+        	if(datajson.data.length >= 1){
+        		$("<h2>FOLLOWED USERS</h2>").prependTo("#followed-box");
+	        	for (var i = 0; datajson.data.length >= i; i++) {
+	        		// console.log(datajson[i].id);
+	        		adduserInfo(datajson.data[i]);
+	        	}
+
+        	}
+
+        }
+    });
 
 	$("#sinofool-btn").on("click", function(){
 	    $.ajax({
@@ -60,23 +78,6 @@ $(function(){
 
 
 	$("#followed-btn").on("click", function(){
-	    $.ajax({
-	        url: url_self +"followed-by?access_token=" + exis_accesstoken,
-	        method: 'get',
-	        dataType: 'jsonp',
-	        success: function(datajson) {
-				console.log(datajson);
-	        	if(datajson.data.length >= 1){
-	        		$("<h2>FOLLOWED USERS</h2>").prependTo("#followed-box");
-		        	for (var i = 0; datajson.data.length >= i; i++) {
-		        		// console.log(datajson[i].id);
-		        		adduserInfo(datajson.data[i]);
-		        	}
-
-	        	}
-
-	        }
-	    });
 	});
 
 
