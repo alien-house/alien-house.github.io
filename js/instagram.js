@@ -46,13 +46,13 @@ $(function(){
 	        success: function(datajson) {
 	        	if(datajson !== undefined){
 		        	$(".profile-box").clone().addClass("sinofool").appendTo( "#test-detail" );
-	    			$("#username",".sinofool").append(datajson.data.username);
-	    			$("#name",".sinofool").append(datajson.data.full_name);
-	    			$("#bio",".sinofool").append(datajson.data.bio);
+	    			$("#username",".sinofool").innerhtml(datajson.data.username);
+	    			$("#name",".sinofool").innerhtml(datajson.data.full_name);
+	    			$("#bio",".sinofool").innerhtml(datajson.data.bio);
 	    			$(".profile-img",".sinofool").find("img").attr("src",datajson.data.profile_picture);
-	    			$("#followed",".sinofool").append(datajson.data.counts.followed_by);
-	    			$("#follows",".sinofool").append(datajson.data.counts.follows);
-	    			$("#media",".sinofool").append(datajson.data.counts.media);
+	    			$("#followed",".sinofool").innerhtml(datajson.data.counts.followed_by);
+	    			$("#follows",".sinofool").innerhtml(datajson.data.counts.follows);
+	    			$("#media",".sinofool").innerhtml(datajson.data.counts.media);
 	        	}
 	        }
 	    });
