@@ -57,8 +57,6 @@ $(function(){
 	        }
 	    });
 	});
-https://api.instagram.com/v1/users/{user-id}/?access_token=ACCESS-TOKEN
-
 
 	$("#search-btn").on("click", function(){
 	    $.ajax({
