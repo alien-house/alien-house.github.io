@@ -89,7 +89,7 @@ function adduserInfo(datajson){
 	var full_name = datajson.username;
 	// $(".profile-box").clone().addClass(full_name).appendTo( "#test-detail" );
 	var container = '<li>';
-	container += '<a href="https://www.instagram.com/'+datajson.username+'/">';
+	container += '<a href="https://www.instagram.com/'+datajson.username+'/" target="_blank">';
 	container += '<p>'+datajson.full_name+'</p>';
 	container += '<span>'+datajson.username+'</span>';
 	container += "<img src='"+datajson.profile_picture+"' width='100' height='100' >";
