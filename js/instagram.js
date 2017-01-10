@@ -21,16 +21,16 @@ $(function(){
         url: url_self +"?access_token=" + exis_accesstoken,
         method: 'get',
         dataType: 'jsonp',
-        success: function(data) {
-        	console.log(data);
-        	if(data !== undefined){
-    			$("#name").append(data.data.full_name);
-    			$("#username").append(data.data.username);
-    			$("#bio").append(data.data.bio);
-    			$(".profile-img").find("img").attr("src",data.data.profile_picture);
-    			$("#followed").append(data.data.counts.followed_by);
-    			$("#follows").append(data.data.counts.follows);
-    			$("#media").append(data.data.counts.media);
+        success: function(datajson) {
+        	console.log(datajson);
+        	if(datajson !== undefined){
+    			$("#username").append(datajson.data.username);
+    			$("#name").append(datajson.data.full_name);
+    			$("#bio").append(datajson.data.bio);
+    			$(".profile-img").find("img").attr("src",datajson.data.profile_picture);
+    			$("#followed").append(datajson.data.counts.followed_by);
+    			$("#follows").append(datajson.data.counts.follows);
+    			$("#media").append(datajson.data.counts.media);
         	}
         }
     });
