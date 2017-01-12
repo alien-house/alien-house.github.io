@@ -379,6 +379,26 @@ $bob-num: 6px;
 }
 .blow{
 	color:#333;
+	margin:0;
+	padding:4px 0 0;
+	.blow-img{
+		margin:0 0 8px;
+		img{
+			width:50px;
+		}
+	}
+	p{
+		font-size:1.3rem;
+		line-height:1;
+		margin:0;
+		padding:0;
+	}
+	span{
+		font-size:1.0rem;
+		line-height:1;
+		margin:0;
+		padding:0;
+	}
 }
 #map-canvas {
 	width: 100%;

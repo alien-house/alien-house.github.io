@@ -169,7 +169,7 @@ function successFunc( position ){
         method: 'get',
         dataType: 'jsonp',
         success: function(datajson) {
-        	// console.log(datajson);
+        	console.log(datajson);
         	iconPin(datajson.data, position.coords);
         }
     });
@@ -183,11 +183,12 @@ function iconPin(data, pos){
 	
 	for (var i = 0; i < data.length; i++) {
 		neighborhoods.push({lat: data[i].location.latitude, lng: data[i].location.longitude});
+		var textArray = '<div class="blow"><div class="blow-img"><img src="'+data[i].images.thumbnail.url+'"></div>';
 		if(data[i].caption !== null){
-			contentString.push('<div class="blow">' + data[i].caption.text + '</div>');
-		}else{
-			contentString.push('<div class="blow">no comment</div>');
+			textArray += '<p>' + data[i].caption.text + '</p>';
 		}
+		textArray += '<span>by: '+ data[i].user.full_name + '</span></div>';
+		contentString.push(textArray);
 	}
 
 	drop();
@@ -204,12 +205,23 @@ function iconPin(data, pos){
 
 	function addMarkerWithTimeout(position, timeout, i) {
 	  window.setTimeout(function() {
+	  	 var image = {
+		    // url: data[i].images.thumbnail.url,
+		    url: data[i].user.profile_picture,
+		    // size: new google.maps.Size(50, 50),
+  			scaledSize: new google.maps.Size(40, 40)
+		  };
 	  	var emark = new google.maps.Marker({
-	      position: position,
-	      map: map,
-	      title: 'test',
-	      animation: google.maps.Animation.DROP
+			position: position,
+			map: map,
+			icon: image,
+			title: data[i].user.full_name,
+			animation: google.maps.Animation.DROP
 	    });
+	    // emark.css({"border-radius":"4px"});
+		emark.addListener('click', function() {
+			window.open(data[i].link, '_blank');
+		});
 		emark.addListener('mouseover', function() {
 			infowindow[i].open(map, emark);
 		});
