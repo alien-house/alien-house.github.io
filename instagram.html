@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta name="view" charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>API test | Shinji Nakai | Front-End Developer | Portofolio</title>
+    <title>Instagram | Shinji Nakai | Front-End Developer | Portofolio</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="bower_components/global/index.js"></script>
     <script src="js/min/script.js"></script>
     <script src="js/min/instagram.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDGVWzd-d--oUg4g1nC4PNBvpKqUlpVQmw&libraries=places,geometry&lang=en&callback=runFunc"></script>
 
   </head>
   <body class="base">
@@ -46,24 +47,25 @@
     <!-- /intro-box -->
 
     <!-- wrap -->
-    <section class="test section--base" id="test-detail">
-      <h1><i class="fa fa-folder-open" aria-hidden="true"></i> login</h1>
-    <div>
+    <section class="section--base" id="test-detail">
+      <h1><i class="fa fa-instagram" aria-hidden="true"></i> instagram</h1>
+
+    <!-- <div>
       <a class="btn btn-default" id="login-btn" href="https://www.instagram.com/oauth/authorize/?client_id=ba9768de093e40d68bf07749a9630fbd&redirect_uri=https://alien-house.github.io/test_api.html&response_type=token&scope=likes+comments+relationships+public_content+basic+follower_list">LOGIN</a>
-      <a class="btn btn-default" id="logout-btn" href="test_api.html">LOGOUT</a>
+      <a class="btn btn-default" id="logout-btn" href="test_api.html">LOGOUT</a> -->
 
       <!-- <div class="btn btn-default" id="followed-btn">FOLLOWED USERS</div> -->
-      <!-- <div class="btn btn-default" id="sinofool-btn">SINOFOOL</div> -->
-    </div>
+      <!-- <div class="btn btn-default" id="sinofool-btn">SINOFOOL</div>
+    </div> -->
 
     <div class="container profile-box">
-      <div class="row flex-items-xs-center flex-items-md-middle">
+      <div class="row flex-items-xs-center flex-items-md-middle row-profile">
         <div class="col-sm-2">
-          <div class="profile-img"><img src=""></div>
+          <div class="profile-img"><a href="https://www.instagram.com/sin6o6/" target="_blank"><img src=""></a></div>
         </div>
         <div class="col-sm-4">
           <section class="profile">
-            <h2><span id="name"></span> (username:<span id="username"></span>)</h2>
+            <h2><a href="https://www.instagram.com/sin6o6/" target="_blank"><span id="name"></span> (username:<span id="username"></span>)</a></h2>
             <p id="bio"></p>
             <dl class="dl-list">
               <dt>followed by</dt>
@@ -76,22 +78,30 @@
           </section>
         </div>
       </div>
+      <div class="row flex-items-xs-center flex-items-md-middle">
+        <div class="col-sm-10 col-md-10">
+          <ul class="media-list" id="media-list">
+          </ul>
+        </div>
+      </div>
+
+
     </div>
 
     <div class="container followed-box" id="followed-box">
-      <div class="row flex-items-md-middle">
+      <div class="row flex-items-md-middle flex-items-xs-center">
         <div class="col-sm-8">
           <ul id="followed-list">
           </ul>
+          <h2 class="title-h2">Around You</h2>
+          <div class="gmap" id="map-canvas">
+          </div>
         </div>
       </div>
     </div>
 
-
     </section>
     <!-- /wrap -->
-
-
 
     <nav class="foot-nav">
       <ul>
@@ -107,7 +117,7 @@
     </a></li>
         <li><a href="https://dribbble.com/" target="_blank" class="pop"><i class="fa fa-dribbble" aria-hidden="true"></i>
     </a></li>
-        <li><a href="test_api.html#access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01"><i class="fa fa-instagram" aria-hidden="true"></i>
+        <li><a href="instagram.html#access_token=4401932064.ba9768d.a658dfd9cfbe490a85e170ad07592b01"><i class="fa fa-instagram" aria-hidden="true"></i>
     </a></li>
         <!--
         <li><a href="#" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i>
