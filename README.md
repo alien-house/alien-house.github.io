@@ -8,7 +8,7 @@ Students / Freelance as Web Designer & Developer
 ## What am I studying
 ### Taking Class
 - [x] Wireless and Mobile technology – 101
-- [ ] Web Development for Mobile Devices – 102
+- [x] Web Development for Mobile Devices – 102
 - [x] Rich Media Development – 103
 - [x] Project Management – 104
 - [x] Media Development – 105
