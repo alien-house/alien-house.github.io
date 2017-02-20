@@ -1,6 +1,6 @@
 # Sin's Portfolio
 
-I'm learning form my teacher how to develop app!
+I'm learning from my teacher how to develop app!
 
 ## Status
 Students / Freelance as Web Designer & Developer
