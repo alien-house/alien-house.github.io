@@ -35,6 +35,8 @@ https://scratch.mit.edu/projects/131501126/
 - [ ] Making Logo + Web Site
 
 ## What do I need to do?
+### Front-End Developer Handbook 2017
+https://frontendmasters.gitbooks.io/front-end-handbook-2017/
 - [ ] Improving my English Skill
 - [ ] Increasing my Front-End Skill
   - [ ] React
