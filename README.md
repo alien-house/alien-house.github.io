@@ -15,8 +15,8 @@ Students / Freelance as Web Designer & Developer
 - [ ] C# and Cross Platform Mobil Development - 201
 - [ ] Java Development – 202
 - [ ] Android App Development and Project for Android – 301
-- [ ] C, Objective C an Swift - 401
-- [ ] iOS App Development and Project for iOS – 402
+- [x] C, Objective C an Swift - 401
+- [x] iOS App Development and Project for iOS – 402
 
 ### College Subjects
 - Business Markting using Social Media(7 Step Plan) 
