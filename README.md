@@ -32,7 +32,16 @@ https://scratch.mit.edu/projects/131501126/
 ### Assignment
 - [x] Summarize (Agile Software Development & Project Management)
 - [x] Creating Game using Scratch
-- [ ] Making Logo + Web Site
+- [x] Making Logo + Web Site
+
+## My skills
+- [x] HTML / CSS(Scss)
+- [x] JavaScript
+- [x] PHP
+- [x] Swift / Objective-C
+- [x] Java
+- [x] ActionScript2.0 / 3.0
+- [x] C
 
 ## What do I need to do?
 ### Front-End Developer Handbook 2017
@@ -45,13 +54,4 @@ https://frontendmasters.gitbooks.io/front-end-handbook-2017/
 - [ ] Making Self Projects in English
 - [ ] Modifying Resume
 - [ ] Modifying LinkedIn
-
-## My skills
-- [x] HTML
-- [x] CSS
-- [x] Scss
-- [x] JavaScript
-- [x] PHP
-- [x] ActionScript
-
 
