@@ -1,9 +1,10 @@
 # Sin's Portfolio
 
-I'm learning from my teacher how to develop app!
+I'm learning from my teacher how to develop app! and also studying React.
+
 
 ## Status
-Students / Freelance as Web Designer & Developer
+Freelance as a Front-End Developer & Web Designer / Students
 
 ## What am I studying
 ### Taking Class
@@ -13,7 +14,7 @@ Students / Freelance as Web Designer & Developer
 - [x] Project Management – 104
 - [x] Media Development – 105
 - [ ] C# and Cross Platform Mobil Development - 201
-- [ ] Java Development – 202
+- [x] Java Development – 202
 - [ ] Android App Development and Project for Android – 301
 - [x] C, Objective C an Swift - 401
 - [x] iOS App Development and Project for iOS – 402
